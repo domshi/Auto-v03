@@ -26,12 +26,12 @@ while (True):
       print((vehicleChoice) + ' is not an authorized vehicle, if you received this in error please check the spelling and try again')
     continue
   if int(selection) == 3:
-    vehicleChoice = input('Please Enter the full Vehicle name you would like to add: ')
-    if vehicleChoice in AllowedVehiclesList:
-      print((vehicleChoice) + ' is already an authorized vehicle')
-    if vehicleChoice not in AllowedVehiclesList:
-      AllowedVehiclesList.append(vehicleChoice)
-      print('You have added ' + (vehicleChoice) + ' to the authorized vehicle list')
+    vehicleAdd = input('Please Enter the full Vehicle name you would like to add: ')
+    if vehicleAdd in AllowedVehiclesList:
+      print((vehicleAdd) + ' is already an authorized vehicle')
+    if vehicleAdd not in AllowedVehiclesList:
+      AllowedVehiclesList.append(vehicleAdd)
+      print('You have added ' + (vehicleAdd) + ' to the authorized vehicle list')
     continue
   if int(selection) != 4:
     print("Invalid Choice,Please select a valid choice from the menu")
